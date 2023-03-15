@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vacanta.controller.OffersController">
+   <children>
+      <DatePicker fx:id="startDatePicker" layoutX="28.0" layoutY="34.0" onAction="#clickStartDatePicker" promptText="Start date" />
+      <DatePicker fx:id="endDatePicker" layoutX="28.0" layoutY="105.0" onAction="#clickEndDatePicker" promptText="End date" />
+      <TableView fx:id="specialOffersTable" layoutX="226.0" layoutY="30.0" prefHeight="355.0" prefWidth="345.0">
+        <columns>
+          <TableColumn fx:id="startDateColumn" prefWidth="122.0" text="Start date" />
+          <TableColumn fx:id="endDateColumn" prefWidth="113.0" text="End date" />
+            <TableColumn fx:id="percentsColumn" prefWidth="109.0" text="Percents" />
+        </columns>
+      </TableView>
+      <Button fx:id="searchButton" layoutX="89.0" layoutY="169.0" mnemonicParsing="false" onAction="#clickSearchButton" text="Search" />
+      <Button fx:id="rezervaButton" layoutX="89.0" layoutY="275.0" mnemonicParsing="false" onAction="#clickRezervaButton" text="Rezerva" />
+   </children>
+</AnchorPane>

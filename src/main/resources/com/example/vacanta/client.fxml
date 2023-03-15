@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vacanta.controller.ClientController">
+   <children>
+      <TableView fx:id="offersTable" layoutX="48.0" layoutY="71.0" prefHeight="258.0" prefWidth="504.0">
+        <columns>
+          <TableColumn fx:id="startDateColumn" prefWidth="112.0" text="Start date" />
+          <TableColumn fx:id="endDateColumn" prefWidth="100.0" text="End date" />
+            <TableColumn fx:id="percentsColumn" prefWidth="83.0" text="Percents" />
+            <TableColumn fx:id="hotelNameColumn" prefWidth="100.0" text="Hotel" />
+            <TableColumn fx:id="locationNameColumn" prefWidth="108.0" text="Location" />
+        </columns>
+      </TableView>
+      <Button fx:id="vreauRezervareButton" layoutX="251.0" layoutY="29.0" mnemonicParsing="false" onAction="#clickVreauRezervareButton" text="Vreau rezervare" />
+   </children>
+</AnchorPane>
